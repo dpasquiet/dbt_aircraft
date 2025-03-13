@@ -1,0 +1,18 @@
+version: 1
+
+sources:
+  - name: aircraft
+    description: Aircraft Project
+    database: raw
+    schema: public
+    tables:
+      - name: aircraft
+        description: Raw aircraft data.
+        columns:
+          - name: index
+            description: Primary key for aircraft.
+            tests:
+              - unique
+              - not_null
+          
+          
