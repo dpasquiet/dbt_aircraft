@@ -14,5 +14,31 @@ sources:
             tests:
               - unique
               - not_null
-          
+
+      - name: airlines
+        description: Raw airlines data.
+        columns:
+          - name: index
+            description: Primary key for airlines.
+            tests:
+              - unique
+              - not_null
+
+      - name: airports
+        description: Raw airports data.
+        columns:
+          - name: index
+            description: Primary key for airports.
+            tests:
+              - unique
+              - not_null
+
+      - name: flight_summary_data
+        description: Raw flight_summary_data data.
+        columns:
+          - name: index
+            description: Primary key for flight_summary_data.
+            tests:
+              - unique
+              - not_null
           
