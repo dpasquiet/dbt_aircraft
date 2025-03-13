@@ -41,4 +41,12 @@ sources:
             tests:
               - unique
               - not_null
-          
+
+      - name: individual_flights
+        description: Raw individual_flights data.
+        columns:
+          - name: index
+            description: Primary key for individual_flights.
+            tests:
+              - unique
+              - not_null
