@@ -1,5 +1,5 @@
 select
-    index,
+    Index,
     Aircraft_id,
     Aircraft_Type,
     Mass,
