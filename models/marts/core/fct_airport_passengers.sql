@@ -25,4 +25,8 @@ airport_passengers as (
     ORDER BY number_passengers DESC
 )
 
-select * from airport_passengers
+--select * from airport_passengers
+
+select ap."Airport_Name", SUM(ap.number_passengers) AS total_passengers
+from airport_passengers AS ap
+group by ap."Airport_Name"
